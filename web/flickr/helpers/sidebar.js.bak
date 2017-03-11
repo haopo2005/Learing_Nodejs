@@ -1,3 +1,0 @@
-var Stats = require('./stats'),
-    Images = require('./images'),
-    Comments = require('./comments');

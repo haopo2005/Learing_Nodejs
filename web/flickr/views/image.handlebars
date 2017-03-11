@@ -5,7 +5,7 @@
     <div class="panel-body">
         <p>{{ image.description }}</p>
         <div class="col-md-12 text-center">
-            <img src="/public/upload/{{image.filename}}" class="img-thumbnail">
+            <img src="/public/upload/temp/{{image.filename}}" class="img-thumbnail">
         </div>
     </div>
     <div class="panel-footer">
@@ -14,6 +14,9 @@
                 <button class="btn btn-success" id="btn-like" data-id="{{ image.uniqueId }}"><i class="fa fa-heart"> Like</i></button>
                 <strong class="likes-count">{{ image.likes }}</strong> &nbsp; - &nbsp; <i class="fa fa-eye"></i> <strong>{{ image.views }}</strong>
                 &nbsp; - &nbsp; Posted: <em class="text-muted">{{ timeago image.timestamp }}</em>
+            </div>
+            <div class="col-md-4 text-right">
+                <button class="btn btn-danger" id="btn-delete" data-id="{{ image.uniqueId }}"><i class="fa fa-times"></i></button>
             </div>
         </div>
     </div>
