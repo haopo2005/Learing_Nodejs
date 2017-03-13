@@ -52,7 +52,7 @@ module.exports = {
                 } else {
                     var tempPath = req.files.file.path,
                         ext = path.extname(req.files.file.name).toLowerCase(),
-                        targetPath = path.resolve('./public/upload/temp/' + imgUrl + ext);
+                        targetPath = path.resolve('./public/upload/' + imgUrl + ext);
 						console.log(targetPath);
                     if (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif') {
 					    //仅当图片被保存到服务器磁盘后，才写数据库记录
